@@ -6,6 +6,157 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script language="javascript" src="ten_tap_tin_javascript.js"></script>
+  <style>
+    /*==Reset CSS==*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*==Style cơ bản cho website==*/
+body {
+  font-family: sans-serif;
+  color: rgb(48, 48, 48);
+}
+
+
+/*==Style cho menu===*/
+#menu {
+  z-index: 2;
+  position:sticky;
+  
+}
+#menu ul {
+  background: #242424;
+  list-style-type: none;
+  text-align: center;
+  opacity: 95%;
+}
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -5px;
+  position: relative;
+}
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  border:0px solid white;
+
+}
+#menu a:hover {
+  background: #F1F1F1;
+  color: #333;
+  border-radius:20px;
+  animation-name:load2s;
+  animation-iteration-count: 1;
+  animation-delay:0s;
+  animation-duration: 0.6s;
+}
+@keyframes load2s {
+    0% {
+      opacity: 0%;
+    }
+    100% 
+    {
+      opacity:100%;
+    }
+}
+.nav-up {
+  top: -40px;
+}
+#task li {
+  display:block;
+}
+#task {
+  display: none;
+  position: absolute;
+ }
+ 
+#menu li:hover #task {
+  display:block;
+  border-radius:20px;
+ }
+ #task li {
+  margin-left: 0 !important;
+ }
+ .text {
+  padding:10px;
+  padding-left: 20px;
+  padding-top:70px;
+  border:1px solid black;
+  background-color: #78aae4;
+ }
+ #space {
+  text-align:center;
+ }
+ .iconmusic {
+  width:10px;
+  height:10px;
+ }
+img {
+  display:block;
+  width:auto;
+  height:1500px;
+  max-width: 2000px; max-height:2000px;
+  position: relative;
+  bottom:150px;
+  z-index: 1;
+}
+.righttext2 {
+  position:relative;
+  right:-40%;
+}
+
+
+.video1 {
+  position:relative;
+  border: 5px solid white;
+  animation-delay: 1s;
+  animation-name:bordermation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  border-radius: 5px;
+  margin-left:35%;
+  margin-top:5px;
+}
+
+@keyframes bordermation{
+  25% {
+    border-color:antiquewhite;
+  }
+  50% {
+    border-color:aquamarine;
+  }
+  75% {
+    border-color:cornflowerblue;
+  }
+  90% {
+    border-color:darkblue;
+  }
+  100% {
+    border-color:azure;
+  }
+}
+
+.iconmenu {
+  border:0px solid black;
+  width:60px;
+  height:60px;
+  position:fixed;
+  background-color: #78aae4;
+  border-radius: 50px;
+  margin-top:10px; margin-left:15px;
+  list-style: none;
+}
+
+.iconmenu:hover {
+  background-color: #e71ad6;
+}
+  </style>
 </head>
 <body>
   <div class="menu nav-down">
