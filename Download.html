@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <title>O-Osteup</title>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script language="javascript" src="ten_tap_tin_javascript.js"></script>
+  <script src="https://kit.fontawesome.com/c1f9835be7.js" crossorigin="anonymous"></script>
+
+  <style>
+    /*==Reset CSS==*/
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+/*==Style cơ bản cho website==*/
+body {
+  font-family: sans-serif;
+  color: rgb(48, 48, 48);
+  z-index: 1;
+  background-color:#CFF5E7 ;
+}
+
+
+/*==Style cho menu===*/
+#menu {
+  z-index: 2;
+  position:sticky;
+  
+}
+#menu ul {
+  background: #242424;
+  list-style-type: none;
+  text-align: center;
+  opacity: 95%;
+}
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -5px;
+  position: relative;
+}
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  border:0px solid white;
+
+}
+#menu a:hover {
+  background: #F1F1F1;
+  color: #333;
+  border-radius:20px;
+  animation-name:load2s;
+  animation-iteration-count: 1;
+  animation-delay:0s;
+  animation-duration: 0.6s;
+}
+@keyframes load2s {
+    0% {
+      opacity: 0%;
+    }
+    100% 
+    {
+      opacity:100%;
+    }
+}
+.nav-up {
+  top: -40px;
+}
+#task li {
+  display:block;
+}
+#task {
+  display: none;
+  position: absolute;
+ }
+ 
+#menu li:hover #task {
+  display:block;
+  border-radius:20px;
+ }
+ #task li {
+  margin-left: 0 !important;
+ }
+ .text {
+  padding-top:70px;
+  background-image: url(https://coolbackgrounds.io/images/backgrounds/index/aqua-d9b59c89.png);
+  padding-left:80px;
+  padding-right:150px;
+  background-size: auto;
+ }
+ 
+ .iconmusic {
+  width:10px;
+  height:10px;
+ }
+img {
+  display:block;
+  width:auto;
+  height:1500px;
+  max-width: 2000px; max-height:2000px;
+  position: relative;
+  bottom:150px;
+  z-index: 1;
+}
+.righttext2 {
+  position:relative;
+  right:-10%;
+  display:block;
+}
+
+body {
+  overflow-x: hidden;
+  position:relative; bottom:40px;
+}
+
+.video1 {
+  position:relative;
+  border: 5px solid white;
+  animation-delay: 1s;
+  animation-name:bordermation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  border-radius: 5px;
+  margin-left:5%;
+  margin-top:5px;
+}
+
+@keyframes bordermation{
+  25% {
+    border-color:antiquewhite;
+  }
+  50% {
+    border-color:aquamarine;
+  }
+  75% {
+    border-color:cornflowerblue;
+  }
+  90% {
+    border-color:darkblue;
+  }
+  100% {
+    border-color:azure;
+  }
+}
+
+.iconmenu {
+  border:0px solid black;
+  width:60px;
+  height:60px;
+  position:fixed;
+  background-color: #78aae4;
+  border-radius: 50px;
+  margin-top:10px; margin-left:15px;
+  list-style: none;
+}
+
+.iconmenu:hover {
+  background-color: #e71ad6;
+}
+.a24879 {
+  animation-name:a24879x;
+  animation-duration: 1s;
+  animation-delay:0.2s;
+  overflow:hidden;
+
+}
+
+@keyframes a24879x {
+  0% {
+  
+  }
+  100% {
+
+  }
+}
+#zoomtextwellcome {
+  font-size:50px;
+}
+
+.logo {
+  clip-path: circle(50% at 50% 50%);
+  height:40px;
+  width:40px;
+  image-rendering: auto; 
+  position:relative;
+  top: 50px; left:20px;
+}
+#taglinkytnewandold {
+  background-color: #78aae4;
+  border: 1px solid rgb(0, 140, 255);
+}
+.theend {
+  background-color: rgb(51, 49, 49);
+  height:10px;
+  
+}
+.c {
+  color:white;
+}
+.loadingweb {
+  position:fixed;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0);
+  animation: loadweb 1s 3;
+  right:46%; top:42%;
+  opacity: 0%;
+}
+
+@keyframes loadweb {
+  0% {
+     transform: rotate(.5turn);    z-index:10;
+  }
+  1% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.backgroundloading {
+  border: 1px solid black; height:0px; width:0px;
+  animation-name:backgroundload;
+  animation-duration: 3s; animation-iteration-count: 1; position:fixed;
+  z-index: 0;
+}
+@keyframes backgroundload {
+  0% {background-color: #000; z-index:10 ;   width:10000px; height:10000px;}
+  70% {background-color: #000;}
+  75% {opacity:100%;z-index:10 }
+  90% { opacity:0% }
+  100% { opacity:0%;width:10000px; height:10000px;}
+}
+  </style>
+</head>
+<body>
+  <div class="backgroundloading" opacity:0%>
+    <div class="loadingweb" ></div>
+  </div>
+  <div class="menu nav-down">
+   <div id="menu">
+    <ul>
+      <div>
+        <a target="_blank" href="https://www.facebook.com/noobpie/"><img class="logo" src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/275615427_148210244325663_138023405382153339_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xDmTsCtMYt4AX9Mm8_t&_nc_ht=scontent.fhan5-11.fna&oh=00_AfDesWTaKCmcBxtPRm-Y0Mq4S-x97CtwQ45wmtpxfr2yoA&oe=63799A1F"></a>
+       </div> 
+     <li><a href="https://sirocandy06.github.io/WDLF-Osteup-Demo/home.html">Trang chủ</a></li>
+     <li><a href="#">Tải Xuống</a></li>
+     <li><a href="#">Chi tiết</a>
+      <ul id="task">
+       <li>
+        <a href="#">Giới Thiệu</a>
+       </li>
+       <li><a href="#">Donate</a></li>
+       <li><a href="#">Kiếm Tiền</a></li>
+      </ul>
+     </li>
+     <li><a href="#">Hỗ Trợ</a></li>
+     <li><a href="#">Liên hệ</a>
+      <ul id="task">
+       <li><a href="https://discord.gg/ytB474gye2" target="_blank">Discord</a></li>
+       <li><a href="https://www.youtube.com/channel/UC-FKTqZu2tO0-vgAM1S6dfw" target="_blank">Youtube</a></li>
+       <li><a href="https://www.facebook.com/noobpie/" target="_blank">Facebook</a></li>
+       <li><a href="https://github.com/SiroCandy06" target="_blank">Gifhub</a></li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </div>
